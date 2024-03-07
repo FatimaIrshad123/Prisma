@@ -77,5 +77,4 @@ app.post('/updateUser',async(req,res)=> {
     res.json(user)
 })
 
-
 app.listen(port,() => console.log('App running on port 3000'))
