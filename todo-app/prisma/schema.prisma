@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:fatima@localhost:5432/prisma"
+  url      = env("")
 }
 model User {
    id         Int      @id @default(autoincrement())

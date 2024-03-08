@@ -17,7 +17,6 @@ async function insertUser(username: string, password: string, firstName: string,
     })
     console.log(res)
 }
-// insertUser('javaria@gmail.com','12345','fatima','irshad')
 
 interface UpdateParams {
     firstName: string;
@@ -42,7 +41,6 @@ async function updateUser(username: string, {
   })
   console.log(res)
 }
-// updateUser('fatima@gmail.com',{firstName:'abc',lastName:'xyz'})
 
 async function getUser(username: string) {
   let res = await prisma.user.findFirst({
